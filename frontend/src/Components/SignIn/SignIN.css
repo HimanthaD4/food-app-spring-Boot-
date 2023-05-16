@@ -1,0 +1,10 @@
+.loginPage_sigIn{
+    color: white;
+    margin-top: 15px;
+}
+
+.error_message{
+    color: rgb(255, 69, 69);
+    margin-top: 10px;
+    font-weight: bolder;
+}

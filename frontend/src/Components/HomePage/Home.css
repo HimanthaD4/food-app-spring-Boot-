@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainE{
+    background-color: rgb(255, 255, 255);
+}
+
+.home{
+
+    margin-top: 10px;
+    margin-bottom:-50px;
+}
+
+/* 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID">
+</head>
+<body>
+    <h2>Login</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+        function onSignIn(googleUser) {
+            // Retrieve the ID token from the GoogleUser object
+            var id_token = googleUser.getAuthResponse().id_token;
+
+            // Send the ID token to the server for verification and authentication
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:8080/login/oauth2/code/google');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // Redirect to the main page or any other protected route
+                    window.location.href = 'http://localhost:8080/secure/users';
+                }
+            };
+            xhr.send('idtoken=' + id_token);
+        }
+    </script>
+</body>
+</html>

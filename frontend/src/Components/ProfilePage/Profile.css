@@ -1,0 +1,57 @@
+.profile-input {
+    margin-bottom: 10px;
+  }
+  
+  .profile-input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form {
+    margin: 30px ;
+    width :250px;
+  }
+  
+  .profile-submit-btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .profile-delete-btn {
+    margin-top: 0px;
+ 
+  }
+  
+  .profile-container {
+    height: 100px;
+    background-color: white;
+
+  }
+  
+  .profile-card {
+    height: 2000px;
+    border: 1px solid #ffffff;
+  }
+  
+
+  .conta{
+    border: 1px solid #b4b4b4;
+    border-radius: 20px;
+  }
+
+  .image{
+    width:100px;
+    height:100px;
+  }
+
+  .mainImage{
+    margin-left: 1px;
+    background-color: white;
+    width: 10px;
+    height:10px
+  }
